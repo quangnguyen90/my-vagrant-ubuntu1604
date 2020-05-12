@@ -15,4 +15,4 @@ sudo apt-get install -y git;
 sudo wget https://getcomposer.org/composer.phar
 sudo mv composer.phar /usr/local/bin/composer;
 
-echo "01-common.sh: Done!!!!!";
+echo "****************************************** 01-common.sh: Done!!!!!";

@@ -57,4 +57,4 @@ while :; do
 done
 
 sudo service apache2 restart;    
-echo "06-sites.sh: Done!!!!!";
+echo "****************************************** 06-sites.sh: Done!!!!!";

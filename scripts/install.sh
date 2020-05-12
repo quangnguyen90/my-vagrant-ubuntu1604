@@ -14,4 +14,4 @@ OS=ubuntu1604;
 . $SETUP_SCRIPT/$OS/04-setup-mysql57.sh
 . $SETUP_SCRIPT/$OS/05-setup-phpmyadmin.sh
 . $SETUP_SCRIPT/$OS/06-sites.sh
-. $SETUP_SCRIPT/$OS/08-setup-nodejs-8x.sh
+. $SETUP_SCRIPT/$OS/08-setup-nodejs-10x.sh

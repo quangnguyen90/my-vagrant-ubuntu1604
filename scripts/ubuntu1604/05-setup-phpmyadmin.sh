@@ -13,4 +13,4 @@ sudo echo "phpmyadmin phpmyadmin/mysql/app-pass password $config_mysql_root_pass
 sudo echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | sudo debconf-set-selections;
 sudo apt-get install -y phpmyadmin;
     
-echo "04-setup-phpmyadmin: Done!!!!!";
+echo "****************************************** 05-setup-phpmyadmin: Done!!!!!";

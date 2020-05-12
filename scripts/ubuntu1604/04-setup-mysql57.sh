@@ -18,4 +18,4 @@ sudo mysql -uroot --password=$config_mysql_root_password -e 'USE mysql; UPDATE `
 # Restart MySQL Service
 sudo service mysql restart;
 
-echo "04-setup-mysql57: Done!!!!!";
+echo "****************************************** 04-setup-mysql57: Done!!!!!";

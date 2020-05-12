@@ -9,4 +9,4 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt install -y nodejs;
 sudo apt-get install -y build-essential;
 
-echo "08-setup-nodejs-6x.sh: Done!!!!!";
+echo "****************************************** 08-setup-nodejs-6x.sh: Done!!!!!";

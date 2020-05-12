@@ -10,4 +10,4 @@ sudo apt update;
 # sudo apt upgrade -y;
 sudo apt autoremove;
 
-echo "00-beforeSetup.sh: Done!!!!!";
+echo "****************************************** 00-beforeSetup.sh: Done!!!!!";

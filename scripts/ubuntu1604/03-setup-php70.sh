@@ -20,4 +20,4 @@ sudo sed -i "s/;date\.timezone =$/date\.timezone = Asia\/Tokyo/" /etc/php/7.0/ap
 sudo sed -i "s/; max_input_vars = 1000$/max_input_vars = 10000/" /etc/php/7.0/apache2/php.ini;
 sudo sed -i "s/session\.gc_maxlifetime = 1440$/session\.gc_maxlifetime = 56700/" /etc/php/7.0/apache2/php.ini;
     
-echo "03-setup-php70: Done!!!!!";
+echo "****************************************** 03-setup-php70: Done!!!!!";
