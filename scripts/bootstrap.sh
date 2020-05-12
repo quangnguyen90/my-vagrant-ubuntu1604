@@ -15,7 +15,7 @@ config_mysql_root_password=123456
 config_site1_app_name=vagrantlamp1
 config_site1_server_name=vagrantlamp1-local.com
 config_site1_port=80
-config_site1_root_path=/vagrant/projectone/src
+config_site1_root_path=/vagrant/projectone
 
 # ******************************************
 # Site2 Config
@@ -23,7 +23,7 @@ config_site1_root_path=/vagrant/projectone/src
 config_site2_app_name=vagrantlamp2
 config_site2_server_name=vagrantlamp2-local.com
 config_site2_port=80
-config_site2_root_path=/vagrant/projecttwo/src
+config_site2_root_path=/vagrant/projecttwo
 
 # ******************************************
 # 00 - Before setup
