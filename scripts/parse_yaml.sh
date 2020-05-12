@@ -19,4 +19,4 @@ parse_yaml() {
 }
 
 # read yaml file
-eval $(parse_yaml config.yml "config_")
+eval $(parse_yaml /scripts/configs.yml "config_")

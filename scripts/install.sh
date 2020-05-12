@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 # include parse_yaml function
-. $SETUP_SCRIPT/parse_yaml.sh
+. /scripts/parse_yaml.sh
 
-SETUP_SCRIPT="$config_os_setup_path"
+SETUP_SCRIPT="/scripts"
 OS=ubuntu1604;
 
 # SETUP
