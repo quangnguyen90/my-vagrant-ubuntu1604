@@ -72,5 +72,5 @@ Vagrant.configure(2) do |config|
   # FOR MAC
   config.vm.provision "shell", path: "./scripts/install.sh"
   # FOR WINDOW
-  #config.vm.provision "shell", path: "bootstrap.sh"
+  #config.vm.provision "shell", path: "./scripts/bootstrap.sh"
 end
