@@ -7,13 +7,18 @@
 
 index=1
 while :; do
-    app_name="config_site${index}_app_name"
-    server_name="config_site${index}_server_name"
-    port="config_site${index}_port"
-    root_path="config_site${index}_root_path"
+    get_app_name="config_site${index}_app_name"
+    get_server_name="config_site${index}_server_name"
+    get_port="config_site${index}_port"
+    get_root_path="config_site${index}_root_path"
 
+    app_name=${!get_app_name}
+    server_name=${!get_server_name}
+    port=${!get_port}
+    root_path=${!get_root_path}
+    
     # Empty is break
-    if [ -z "${!app_name}" ]; then
+    if [ -z "$app_name" ]; then
         break
     fi
     
