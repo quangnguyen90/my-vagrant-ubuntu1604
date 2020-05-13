@@ -25,7 +25,7 @@ Vagrant.configure(2) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  # config.vm.network "forwarded_port", guest: 80, host: 2005
+  config.vm.network "forwarded_port", guest: 80, host: 2020
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -41,7 +41,7 @@ Vagrant.configure(2) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   config.vm.synced_folder "./htdocs", "/vagrant", :mount_options => ["dmode=777",  "fmode=666"]
-  config.vm.synced_folder "./scripts", "/vagrant/scripts"
+  config.vm.synced_folder "./scripts", "/vagrant/scripts", :mount_options => ["dmode=777",  "fmode=666"]
   
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -70,7 +70,7 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   # FOR MAC
-  config.vm.provision "shell", path: "./scripts/install.sh"
+  # config.vm.provision "shell", path: "./scripts/install.sh"
   # FOR WINDOW
-  #config.vm.provision "shell", path: "./scripts/bootstrap.sh"
+  config.vm.provision "shell", path: "./scripts/bootstrap.sh"
 end

@@ -12,7 +12,7 @@ config_mysql_root_password=123456
 # ******************************************
 # Site1 Config
 # ******************************************
-config_site1_app_name=vagrantlamp1
+config_site1_app_name=vagrantlamp1-local
 config_site1_server_name=vagrantlamp1-local.com
 config_site1_port=80
 config_site1_root_path=/vagrant/projectone
@@ -20,7 +20,7 @@ config_site1_root_path=/vagrant/projectone
 # ******************************************
 # Site2 Config
 # ******************************************
-config_site2_app_name=vagrantlamp2
+config_site2_app_name=vagrantlamp2-local
 config_site2_server_name=vagrantlamp2-local.com
 config_site2_port=80
 config_site2_root_path=/vagrant/projecttwo
@@ -152,7 +152,10 @@ while :; do
         ServerAlias www.$server_name
         DocumentRoot $root_path
         <Directory $root_path>
+            Options Indexes FollowSymLinks MultiViews
             AllowOverride All
+            Order allow,deny
+            allow from all
             Require all granted
         </Directory>
         # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
@@ -181,7 +184,7 @@ sudo service apache2 restart;
 echo "______________________________________ 06-sites.sh: Done!!!!!";
 
 # ******************************************
-# 07 - Create symbolic link
+# 07 - Create symbolic link - Optional
 # ******************************************
 # SYMBOLIC LINK
 # linking Vagrant directory to Apache 2.4 public directory

@@ -1,4 +1,6 @@
-setup_path: /scripts
+os:
+  name: ubuntu1604
+  setup_path: /scripts
 apache2:
   user: ubuntu
   group: ubuntu
