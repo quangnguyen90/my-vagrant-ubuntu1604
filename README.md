@@ -37,5 +37,5 @@ Hoặc bạn gõ vào trình duyệt url [http//:192.168.56.56/phpinfo.php](http
 Cuối cùng là hãy chiêm ngưỡng kết quả đạt được!
 
 ## Thông tin tác giả ##
-- Author: HienBV
-- Email: [hienbv.it@gmail.com](hienbv.it@gmail.com)
+- Author: Nguyễn Phú Quang
+- Email: nguyenphuquang90@gmail.com
